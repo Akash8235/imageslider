@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash Studio | Super-Level Slider</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+</head>
+<body>
+  <header class="studio-header">
+    
+    <h1>Akash Studio</h1>
+  </header>
+
+  <div class="slider-container">
+    <div class="toolbar">
+      <input type="text" id="searchInput" placeholder="Search Unsplash…" />
+      <button id="searchBtn">Search</button>
+      <select id="themeSelector">
+        <option value="">Theme</option>
+        <option value="dark">Dark</option>
+        <option value="ocean">Ocean</option>
+        <option value="solar">Solar</option>
+      </select>
+      <button id="downloadBtn">Download</button>
+    </div>
+
+    <div class="slider">
+      <button class="nav prev">&#10094;</button>
+      <div class="slides-wrapper">
+        <div class="slides"></div>
+        <div class="caption"></div>
+        <div class="counter"></div>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+      <button class="nav next">&#10095;</button>
+    </div>
+
+    <div class="thumbnails"></div>
+
+    <div class="settings">
+      <label><input type="checkbox" id="autoplay" checked /> Autoplay</label>
+      <label><input type="checkbox" id="voiceToggle" /> Voice Control</label>
+      <label><input type="checkbox" id="shuffleToggle" /> Shuffle Mode</label>
+    </div>
+  </div>
+
+  <footer class="studio-footer">
+    <p>🚀 Powered by Akash Studio • Super-Level Edition</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
